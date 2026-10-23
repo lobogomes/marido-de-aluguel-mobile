@@ -1,0 +1,115 @@
+import { ServiceCategory } from '../types';
+
+export const SERVICE_CATEGORIES: ServiceCategory[] = [
+  {
+    id: 'eletrica',
+    name: 'Elétrica',
+    icon: 'flash',
+    color: '#F39C12',
+    description: 'Instalações, reparos e manutenção elétrica',
+  },
+  {
+    id: 'hidraulica',
+    name: 'Hidráulica',
+    icon: 'water',
+    color: '#3498DB',
+    description: 'Encanamentos, vazamentos e instalações',
+  },
+  {
+    id: 'pintura',
+    name: 'Pintura',
+    icon: 'color-palette',
+    color: '#9B59B6',
+    description: 'Pintura interna, externa e acabamentos',
+  },
+  {
+    id: 'marcenaria',
+    name: 'Marcenaria',
+    icon: 'construct',
+    color: '#8B4513',
+    description: 'Móveis, portas, janelas e carpintaria',
+  },
+  {
+    id: 'ar_condicionado',
+    name: 'Ar-condicionado',
+    icon: 'snow',
+    color: '#00BCD4',
+    description: 'Instalação, manutenção e limpeza de ar-condicionado',
+  },
+  {
+    id: 'limpeza',
+    name: 'Limpeza',
+    icon: 'sparkles',
+    color: '#27AE60',
+    description: 'Limpeza geral, pós-obra e especializada',
+  },
+  {
+    id: 'informatica',
+    name: 'Informática',
+    icon: 'laptop',
+    color: '#2C3E50',
+    description: 'Formatação, redes e manutenção de computadores',
+  },
+  {
+    id: 'jardinagem',
+    name: 'Jardinagem',
+    icon: 'leaf',
+    color: '#2ECC71',
+    description: 'Jardins, paisagismo e corte de grama',
+  },
+  {
+    id: 'alvenaria',
+    name: 'Alvenaria',
+    icon: 'business',
+    color: '#E74C3C',
+    description: 'Paredes, revestimentos e reformas',
+  },
+  {
+    id: 'seguranca',
+    name: 'Segurança',
+    icon: 'shield-checkmark',
+    color: '#34495E',
+    description: 'Câmeras, alarmes e fechaduras',
+  },
+  {
+    id: 'desentupimento',
+    name: 'Desentupimento',
+    icon: 'aperture',
+    color: '#E67E22',
+    description: 'Desentupimento de pias, ralos e esgoto',
+  },
+  {
+    id: 'mudanca',
+    name: 'Mudança',
+    icon: 'cube',
+    color: '#1ABC9C',
+    description: 'Transporte e montagem de móveis',
+  },
+];
+
+export const URGENCY_OPTIONS = [
+  {
+    id: 'normal' as const,
+    label: 'Normal',
+    description: 'Agendar para os próximos dias',
+    icon: 'calendar',
+    color: '#27AE60',
+    extraFee: 0,
+  },
+  {
+    id: 'urgente' as const,
+    label: 'Urgente',
+    description: 'Hoje ou amanhã',
+    icon: 'time',
+    color: '#F39C12',
+    extraFee: 30,
+  },
+  {
+    id: 'emergencia' as const,
+    label: 'Emergência',
+    description: 'Nas próximas horas',
+    icon: 'warning',
+    color: '#E74C3C',
+    extraFee: 80,
+  },
+];
